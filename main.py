@@ -15,5 +15,4 @@ running = True
 while running:
     game = Game()
     game.main_screen(screen, colors, fonts)
-    print("pupa")
 pygame.quit()

@@ -25,6 +25,9 @@ class OriginalString:
     def get_progress(self):
         return self.string_idx / len(self.string)
 
+    def get_count_of_typed_chars(self):
+        return self.string_idx
+
     def draw_text(self, screen, fonts, colors):
         text1 = fonts["system_50"].render(self.string[:self.string_idx], True, colors["gray"])
         text2 = fonts["system_50"].render(self.string[self.string_idx:], True, colors["black"])
